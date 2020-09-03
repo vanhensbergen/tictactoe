@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="tictactoe.views.TicTacToeField" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAMCAAmBAECABQABIJABIABARoIEhAAEAAAAAIAAAg=</HashCode>
+      <FileName>views\TicTacToeField.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="tictactoe.viewmodels.MainViewModel">
+    <Position X="7.75" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="MainViewModel" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Game" Type="tictactoe.models.Game" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.438" />
+        <Point X="6.875" Y="1.438" />
+        <Point X="6.875" Y="1.438" />
+        <Point X="6" Y="1.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Players" Type="tictactoe.models.Player" FixedFromPoint="true">
+      <Path>
+        <Point X="10.25" Y="1.438" />
+        <Point X="11" Y="1.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAACAIAAAAgAAgAogAEEAAAEAABAAABA=</HashCode>
+      <FileName>viewmodels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Players" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tictactoe.commands.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>commands\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="tictactoe.converters.GameStatusToStringConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>converters\GameStatusToStringConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="tictactoe.models.Game" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="1" Width="2.25" />
+    <Members>
+      <Method Name="Game" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Moves" Type="tictactoe.models.Move" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="1.75" />
+        <Point X="2.25" Y="1.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgmBAARgEEIEAAAgACgAABAEAAEAIAEAgARAA=</HashCode>
+      <FileName>models\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Moves" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tictactoe.models.Move" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABBAAIABAAAAAoAAAAgAACAEAAAAABAA=</HashCode>
+      <FileName>models\Move.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tictactoe.models.Player" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1" Width="2" />
+    <Members>
+      <Method Name="Player" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAAgABAAIAAAIAQAgAAAAAAgEIAAAAAAAAI=</HashCode>
+      <FileName>models\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tictactoe.models.TicTacToe" Collapsed="true">
+    <Position X="1.75" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="tictactoe.models.TicTacToe.Sign">
+        <TypeIdentifier>
+          <NewMemberFileName>models\TicTacToe.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="tictactoe.models.TicTacToe.Status">
+        <TypeIdentifier>
+          <NewMemberFileName>models\TicTacToe.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\TicTacToe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
